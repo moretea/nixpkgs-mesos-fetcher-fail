@@ -4,7 +4,8 @@
 2. `bash mesos_job_no_archive.sh` -> should work
 2. `bash mesos_job_with_tgz_uri.sh` -> fails.
     Example output:
-    ```
+
+```
 $ bash mesos_job_with_tgz_uri.sh 
 #### Add app with tar_file.tgz URI
 {"id":"/tar-gz","cmd":"find; while true; do date; sleep 30; done","args":null,"user":null,"env":{},"instances":1,"cpus":0.1,"mem":10,"disk":0,"executor":"","constraints":[],"uris":["http://master/tar_file.tgz"],"fetch":[{"uri":"http://master/tar_file.tgz","extract":true,"executable":false,"cache":false}],"storeUrls":[],"ports":[0],"requirePorts":false,"backoffSeconds":1,"backoffFactor":1.15,"maxLaunchDelaySeconds":3600,"container":null,"healthChecks":[],"dependencies":[],"upgradeStrategy":{"minimumHealthCapacity":1,"maximumOverCapacity":1},"labels":{},"acceptedResourceRoles":null,"ipAddress":null,"version":"2016-07-26T08:39:49.316Z","tasksStaged":0,"tasksRunning":0,"tasksHealthy":0,"tasksUnhealthy":0,"deployments":[{"id":"525be742-056c-44bf-884c-022f746bb60b"}],"tasks":[]}
