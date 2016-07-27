@@ -1,6 +1,6 @@
 # Example for mesos slave URI fetcher failures.
 
-1.  `nixops create -d fetcher-fail master ./machines.nix`
+1.  `nixops create -d fetcher-fail master ./machines.nix -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/81efd0c82db67b945a23d61e2b398f379df99524.tar.gz`
 2. `bash mesos_job_no_archive.sh` -> should work
 2. `bash mesos_job_with_tgz_uri.sh` -> fails.
     Example output:
